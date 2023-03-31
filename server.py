@@ -20,7 +20,7 @@ def api_analysis():
     else:
         error_code = 201
         ret = {'message': 'POST was successful'}
-    return json.dumps(ret, cls=NpEncoder), error_code
+    return json.dumps(ret), error_code
 
 
 if __name__ == "__main__":
