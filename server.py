@@ -10,7 +10,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/api/analysis', methods=['POST'])
+@app.route('/api/endpoint', methods=['POST'])
 def api_analysis():
     data = request.json
 
