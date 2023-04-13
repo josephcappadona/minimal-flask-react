@@ -3,7 +3,6 @@ const path = require('path');
 module.exports = {
     entry: {
         index: './js/index.jsx',
-        analysis: './js/analysis.jsx',
     },
     module: {
         rules: [
@@ -31,9 +30,7 @@ module.exports = {
             },
         ],
     },
-    node: {
-        fs: "empty"
-    },
+    node: {},
     output: {
         path: path.resolve(__dirname, 'static'),
         filename: '[name].bundle.js',
